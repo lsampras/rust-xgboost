@@ -1,6 +1,7 @@
 [package]
 name = "xgboost-sys"
 version = "0.2.0"
+edition = "2021"
 authors = ["Dave Challis <dave@suicas.net>"]
 links = "xgboost"
 build = "build.rs"
@@ -13,5 +14,5 @@ readme = "README.md"
 libc = "0.2"
 
 [build-dependencies]
-bindgen = "0.59"
+bindgen = "0.70.1"
 cmake = "0.1"
