@@ -11,6 +11,8 @@ fn main() {
     let out_dir = env::var("OUT_DIR").unwrap();
     let xgb_root = Path::new(&out_dir).join("xgboost");
 
+    let path = env::current_dir().unwrap();
+    eprintln!("The current directory is {}", path.display());
     // copy source code into OUT_DIR for compilation if it doesn't exist
     if !xgb_root.exists() {
         Command::new("cp")
